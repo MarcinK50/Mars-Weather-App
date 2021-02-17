@@ -114,6 +114,7 @@ function getWeather() {
 				...solData
 			} = data
 			return Object.entries(solData).map(([sol, data]) => {
+				console.log(data)
 				return {
 					sol: sol,
 					maxTemp: data.PRE.mx,
