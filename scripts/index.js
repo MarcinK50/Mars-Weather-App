@@ -116,8 +116,8 @@ function getWeather() {
 			return Object.entries(solData).map(([sol, data]) => {
 				return {
 					sol: sol,
-					maxTemp: data.AT.mx,
-					minTemp: data.AT.mn,
+					maxTemp: data.PRE.mx,
+					minTemp: data.PRE.mn,
 					windSpeed: data.HWS.av,
 					windDirectionDegrees: data.WD.most_common.compass_degrees,
 					windDirectionCardinal: data.WD.most_common.compass_point,
